@@ -1,23 +1,12 @@
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class HippodromeTest {
-    @BeforeEach
-    void setUp() {
-    }
-    @AfterEach
-    void tearDown() {
-    }
-
     @Test
     void whenConstructWithNullList_thenException() {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> new Hippodrome(null));
